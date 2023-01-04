@@ -1,3 +1,189 @@
 body {
   font-family: verdana;
+  width: 100%;
+  padding: 0 1.5rem;
+  background-color:rgb(234, 183, 234);
 }
+.container{
+  padding: 1px;
+  margin: 0.5px;
+  font: 30px;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+.singlePost {
+  width: 800px;
+  height: 200px;
+  box-shadow: 0 1.4rem 8rem black;
+  border: 1px solid lightskyblue;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: thistle;
+}
+.singlePost p{
+  margin: 20px;
+  margin-left: 15px;
+}
+/* .myPost{
+  background-color: mistyrose;
+} */
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid lightskyblue;
+  box-shadow: 0 1rem 6rem black;
+  border-radius: 0.5rem;
+}
+.postDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 1.4rem 8rem black;
+  border: 1px solid lightskyblue;
+  padding: 0.3rem;
+  width: 100%;
+  background-color: thistle;
+  margin-top: 15px;
+}
+.postDetails-form{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  height: 200%;
+}
+.postDetails input{
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.logout-btn{
+  width: 100px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+  height: 200%;
+}
+.login input{
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 10px;
+  margin: 5px;
+}
+.login button{
+  width: 80px;
+  height: 30px;
+  margin-top: 15px;
+}
+.login button:hover{
+  cursor: pointer;
+}
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.register-form{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+  height: 200%;
+}
+.register input{
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 10px;
+  margin: 5px;
+}
+.register button{
+  width: 80px;
+  height: 30px;
+  margin-top: 15px;
+}
+.register button:hover{
+  cursor: pointer;
+}
+.newPost {
+  background-color: rgb(169, 127, 169);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  width: 100%;
+}
+.information{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  height: 200%;
+}
+.information input{
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 5px;
+}
+.information button{
+  width: 100px;
+  height: 30px;
+  margin-top: 15px;
+}
+.information button:hover{
+cursor: pointer;
+}
+.edit-btn{
+  width: 100px;
+  height: 30px;
+  margin-top: 15px;
+}
+.delete-btn{
+  width: 100px;
+  height: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.username{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+.logout-btn{
+  width: 100px;
+  height: 30px;
+  margin-top: 15px;
+}
+
