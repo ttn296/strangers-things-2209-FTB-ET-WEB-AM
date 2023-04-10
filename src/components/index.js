@@ -4,3 +4,4 @@ export { default as Login } from "./Login";
 export { default as Register } from "./Register";
 export { default as NewPost } from "./NewPost";
 export { default as Update } from "./Update";
+export { default as EditPost } from "./EditPost";

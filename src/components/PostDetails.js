@@ -9,8 +9,11 @@ const PostDetails = (props) => {
   const params = useParams();
   const id = params.id;
   const post = posts.find((post) => post._id === id);
+  //console.log(post);
   const setPostId = props.setPostId;
   const token = props.token;
+  const user = props.user;
+  //console.log(user);
 
   //console.log(id);
   //console.log(postDetails);
@@ -47,8 +50,10 @@ const PostDetails = (props) => {
         <p className="price">price: {post.price}</p>
         <p className="willDeliver">will deliver: {post.willDeliver}</p>
         <p className="location">location: {post.location}</p>
-        <button className="edit-btn" onClick={() => setPostId(post._id)}>Edit</button>
+        {post.author.username === user.username ? (<><button className="edit-btn" onClick={() => setPostId(post._id)}>Edit</button>
         <button className= 'delete-btn' onClick = { () => deletePost(post._id) }> Delete </button> 
+        </>)
+        : null}
       </div>
     </div>
         )

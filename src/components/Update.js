@@ -9,8 +9,8 @@ const Update = ({posts, setPosts, postId, setPostId}) => {
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
-    console.log ('title, description: ', title, description, price, location);
-    console.log('postId: ', postId);
+    //console.log ('title, description: ', title, description, price, location);
+    //console.log('postId: ', postId);
     const response = await fetch(`http://strangers-things.herokuapp.com/api/${cohortName}/posts/5e8d1bd48829fb0017d2233b`, {
         method: "PATCH",
         headers: {
@@ -27,10 +27,10 @@ const Update = ({posts, setPosts, postId, setPostId}) => {
         })
       });
       const data = await response.json();
-      console.log('data: ', data);
+      //console.log('data: ', data);
       if(data && data.title ){
         const newPosts = posts.map(post => {
-            console.log(newPosts);
+            //console.log(newPosts);
             if(post._id === postId) {
                 return data;
             }else {
